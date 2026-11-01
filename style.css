@@ -146,6 +146,36 @@ footer { padding: 32px 0 40px; color: var(--muted); font-size: .88rem; border-to
 .tbl th { background: var(--panel-2); color: var(--gold-2); }
 .empty { color: var(--muted); padding: 30px 0; display: none; }
 
+/* game pictures */
+img.res { display: inline-block; width: 22px; height: 22px; vertical-align: -5px; }
+img.res.item { width: 26px; height: 26px; vertical-align: -7px; margin-right: 3px; border-radius: 4px; }
+img.por { display: inline-block; width: 40px; height: 40px; border-radius: 50%; flex: none; }
+img.por.sm { width: 28px; height: 28px; }
+img.por.big, img.big { width: 64px; height: 64px; display: block; margin-bottom: 12px; }
+img.st { display: inline-block; width: 26px; height: 26px; }
+.old { color: var(--muted); }
+b.up { color: #8fd18a; }
+b.down { color: #e58b74; }
+b.same { color: var(--text); }
+
+.stats-tbl table { min-width: 640px; width: 100%; }
+.stats-tbl caption { text-align: left; font: 700 1.05rem "Alegreya SC", serif; color: var(--gold); padding: 6px 0; }
+.stats-tbl th { vertical-align: bottom; font-weight: 400; font-size: .8rem; color: var(--muted); background: var(--panel-2); }
+.stats-tbl th span { display: block; }
+.stats-tbl td { white-space: nowrap; }
+.stats-tbl td.who { display: flex; align-items: center; gap: 10px; white-space: normal; text-align: left; min-width: 180px; }
+.stats-tbl td.who span { display: flex; flex-direction: column; line-height: 1.2; }
+.stats-tbl td.who small { color: var(--muted); }
+.stats-tbl tbody tr:nth-child(even) { background: rgba(255,255,255,.025); }
+.stats-tbl td:first-child { position: sticky; left: 0; background: var(--panel); }
+
+.exp-box { margin-top: 8px; }
+.exp { margin-top: 10px; }
+.exp > b { display: block; color: var(--gold); font-family: "Alegreya SC", serif; margin-bottom: 4px; }
+.exp > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 6px; }
+.chip { display: flex; align-items: center; gap: 8px; background: var(--panel-2); border-radius: 99px; padding: 3px 12px 3px 3px; font-size: .9rem; }
+.chip > span:first-of-type { flex: 1; }
+
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .bar nav a.opt { display: none; }
@@ -155,4 +185,6 @@ footer { padding: 32px 0 40px; color: var(--muted); font-size: .88rem; border-to
   .hero { min-height: 78vh; }
   .cards { grid-template-columns: 1fr; }
   .cl-tools { top: 56px; }
+  .stats-tbl td.who { min-width: 130px; gap: 6px; font-size: .88rem; }
+  .stats-tbl img.por { width: 30px; height: 30px; }
 }
