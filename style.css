@@ -65,7 +65,10 @@ html[lang="en"] [lang="ru"]:not(html) { display: none !important; }
 }
 .hero.short { min-height: min(62vh, 520px); background-position: center 60%; }
 .hero .wrap { position: relative; z-index: 1; padding-bottom: 56px; width: 100%; }
-.hero .title { display: flex; align-items: center; gap: 16px; }
+.hero .title { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.hero .ver { font: 700 1rem "Alegreya SC", serif; color: #24190b; background: var(--gold-2); border-radius: 6px; padding: 2px 10px; align-self: center; }
+.wip { margin-top: 22px; max-width: 820px; padding: 12px 16px; border: 1px solid #a8742f; border-left-width: 4px; border-radius: 8px; background: rgba(217,169,74,.08); }
+.wip b { color: var(--gold-2); }
 .hero .badge { width: clamp(56px, 9vw, 88px); height: auto; filter: drop-shadow(0 4px 12px #000); }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); margin: 0; color: #fff; text-shadow: 0 3px 18px #000; }
 .hero .tag { font-size: clamp(1.1rem, 2.4vw, 1.45rem); max-width: 680px; margin: 6px 0 24px; text-shadow: 0 2px 10px #000; }
@@ -188,3 +191,5 @@ b.same { color: var(--text); }
   .stats-tbl td.who { min-width: 130px; gap: 6px; font-size: .88rem; }
   .stats-tbl img.por { width: 30px; height: 30px; }
 }
+
+.stats-tbl td.same { color: var(--muted); }
