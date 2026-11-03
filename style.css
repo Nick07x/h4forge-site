@@ -57,13 +57,13 @@ html[lang="en"] [lang="ru"]:not(html) { display: none !important; }
   position: relative;
   min-height: min(86vh, 720px);
   display: flex; align-items: flex-end;
-  background: #000 url("img/hero.jpg") center 30% / cover no-repeat;
+  background: #000 url("img/hero.jpg") center top / cover no-repeat;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(21,17,12,0) 30%, rgba(21,17,12,.75) 65%, var(--bg) 100%);
 }
-.hero.short { min-height: min(62vh, 520px); background-position: center 60%; }
+.hero.short { min-height: min(62vh, 520px); background-position: center top; }
 .hero .wrap { position: relative; z-index: 1; padding-bottom: 56px; width: 100%; }
 .hero .title { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .hero .ver { font: 700 1rem "Alegreya SC", serif; color: #24190b; background: var(--gold-2); border-radius: 6px; padding: 2px 10px; align-self: center; }
