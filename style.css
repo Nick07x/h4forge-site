@@ -197,3 +197,15 @@ b.same { color: var(--text); }
 .tbl td b { color: var(--gold-2); }
 .tbl tbody tr:nth-child(even) { background: rgba(255,255,255,.025); }
 .entry > p + .tbl { margin-top: 2px; }
+
+/* fixed bugs: was / now */
+.entry p.was, .entry p.now { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 8px; margin-top: 6px; }
+.entry p.was span, .entry p.now span { font-size: .8em; text-transform: uppercase; letter-spacing: .04em; padding-top: 2px; }
+.entry p.was { color: var(--muted); }
+.entry p.was span { color: #c97a6a; }
+.entry p.now span { color: #8fc28a; }
+/* screenshots in entries */
+figure.shot { margin: 10px 0 2px; }
+figure.shot img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+figure.shot figcaption { color: var(--muted); font-size: .9em; margin-top: 4px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; align-items: start; }
